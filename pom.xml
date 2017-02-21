@@ -1,0 +1,54 @@
+<!-- Copyright (C) 2017-Present  Davy De Waele -->
+<!-- Licensed under the MIT License -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.ddewaele</groupId>
+    <artifactId>ddewaele-organization-pom</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>ddewaele Organization POM</name>
+    <description>A organization pom for Maven projects.</description>
+    <url>http://github.com/ddewaele/ddewaele-organization-pom/</url>
+    <inceptionYear>2017</inceptionYear>
+    <organization>
+        <name>Davy De Waele</name>
+        <url>http://ddewaele.github.io</url>
+    </organization>
+        <licenses>
+            <license>
+                <name>MIT License</name>
+                <url>http://www.opensource.org/licenses/mit-license.php</url>
+            </license>
+        </licenses>
+    <developers>
+        <developer>
+            <name>Davy De Waele</name>
+            <email>ddewaele@gmail.com</email>
+            <organization>ddewaele</organization>
+            <organizationUrl>http://ddewaele.github.io</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:git://github.com/ddewaele/ddewaele-organization-pom.git</connection>
+        <developerConnection>scm:git:git@github.com:ddewaele/ddewaele-organization-pom.git</developerConnection>
+        <url>http://github.com/ddewaele/ddewaele-organization-pom/tree/master</url>
+        <tag>HEAD</tag>
+    </scm>
+    <issueManagement>
+        <system>Github</system>
+        <url>http://github.com/ddewaele/ddewaele-organization-pom/</url>
+    </issueManagement>
+    <prerequisites>
+        <maven>${maven.version}</maven>
+    </prerequisites>
+    <distributionManagement>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
